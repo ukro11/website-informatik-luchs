@@ -1,0 +1,313 @@
+.main {
+    height: 100%;
+}
+
+.main-section-1 {
+    width: 100%;
+    height: 800px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.main-section-1-grid {
+    display: flex;
+    justify-content: center;
+    /*width: min(80%, 1000px);*/
+    width: calc(100% - 200px);
+    height: max-content;
+    padding-bottom: 100px;
+}
+
+.main-section-1-other-container {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 100%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.main-section-1-other-container > table-container {
+    width: 600px;
+    flex-shrink: 1;
+}
+
+.main-section-1-other-container > table-container > table-section:nth-child(1) > table-section-value {
+    height: max-content;
+}
+
+.main-section-1-other-container > table-container > table-section:nth-child(2) > table-section-value {
+    width: 200px;
+    height: 200px;
+}
+
+.main-section-1-other-container > table-container > table-section:nth-child(3) > table-section-value {
+    width: 200px;
+    height: 200px;
+}
+
+#kanadischer-luchs {
+    object-position: -75px center;
+}
+
+#pardelluchs {
+    object-position: -85px center;
+}
+
+#rotluchs {
+    object-position: -20px center;
+}
+
+.main-section-1-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main-section-1-blog-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.main-section-1-blog-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-blue-5);
+    position: relative;
+}
+
+.main-section-1-blog-title::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-blue-5);
+    transform: translateY(5px);
+}
+
+.main-section-1-blog-small-title {
+    color: var(--color-blue-4);
+    font-size: 26px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.main-section-1-blog-text {
+    color: var(--color-gray-2);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-section-1-blog-source {
+    color: var(--color-gray-1);
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.main-section-1-blog-source > a {
+    color: var(--color-gray-1);
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media (max-width: 1350px) {
+    .main-section-1-grid {
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: calc(100%);
+        height: max-content;
+        padding-bottom: 0;
+    }
+
+    .main-section-1-text-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: max-content;
+        justify-self: center;
+        padding-bottom: 100px;
+    }
+
+    .main-section-1-other-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+        margin-left: 0;
+        padding-block: 25px;
+    }
+
+    .main-section-1-other-container > table-container {
+        transform: translateY(unset);
+    }
+}
+
+@media (max-width: 650px) {
+    .main-section-1-other-container > table-container {
+        width: 350px;
+        min-width: unset;
+        height: max-content;
+    }
+
+    .main-section-1-other-container > table-container > table-section {
+        width: 100px;
+    }
+
+    .main-section-1-other-container > table-container > table-section:nth-child(1) {
+        width: 150px;
+    }
+    
+    .main-section-1-other-container > table-container > table-section:nth-child(1) > table-section-value {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .main-section-1-other-container > table-container > table-section:nth-child(2) > table-section-value {
+        display: flex;
+        text-align: center;
+        width: 100px;
+        height: 200px;
+        font-size: 14px;
+    }
+    
+    .main-section-1-other-container > table-container > table-section:nth-child(3) > table-section-value {
+        text-align: center;
+        width: 100px;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .main-section-1-other-container > table-container > table-section > table-section-value > img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    #kanadischer-luchs {
+        object-position: -135px center;
+    }
+    
+    #pardelluchs {
+        object-position: center center;
+    }
+    
+    #rotluchs {
+        object-position: -30px center;
+    }
+
+    .main-section-1-blog-title {
+        font-size: 35px;
+        margin-inline: min(50px, 5%);
+    }
+    
+    .main-section-1-blog-small-title {
+        font-size: 21px;
+        margin-inline: min(50px, 5%);
+    }
+    
+    .main-section-1-blog-text {
+        font-size: 15px;
+        margin-inline: min(50px, 5%);
+    }
+    
+    .main-section-1-blog-source {
+        font-size: 13px;
+        margin-inline: min(50px, 5%);
+    }
+    
+    .main-section-1-blog-source > a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 410px) {
+    .main-section-1-other-container {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 370px) {
+    .main-section-1-other-container {
+        width: 100%;
+    }
+
+    .main-section-1-other-container > table-container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .main-section-1-other-container {
+        margin-left: 0;
+    }
+
+    .main-section-1-other-container > table-container {
+        width: 95%;
+    }
+
+    .main-section-1-other-container > table-container > table-section {
+        width: calc(30%);
+    }
+
+    .main-section-1-other-container > table-container > table-section:nth-child(1) {
+        width: calc(40%);
+        /*width: 150px;*/
+    }
+    
+    .main-section-1-other-container > table-container > table-section > table-section-title {
+        font-size: 16px;
+    }
+
+    .main-section-1-other-container > table-container > table-section:nth-child(1) > table-section-value {
+        width: calc(100%);
+        /*width: 150px;*/
+        height: 200px;
+    }
+    
+    .main-section-1-other-container > table-container > table-section:nth-child(2) > table-section-value {
+        word-break: keep-all;
+        display: flex;
+        text-align: center;
+        width: calc(100%);
+        height: 200px;
+        font-size: 10px;
+    }
+    
+    .main-section-1-other-container > table-container > table-section:nth-child(3) > table-section-value {
+        word-break: keep-all;
+        text-align: center;
+        width: calc(100%);
+        height: 200px;
+        font-size: 10px;
+    }
+
+    .main-section-1-other-container > table-container > table-section > table-section-value > img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    #kanadischer-luchs {
+        object-position: -165px center;
+    }
+}
+
+@media (max-width: 300px) {
+
+}
