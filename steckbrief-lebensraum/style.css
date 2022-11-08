@@ -11,24 +11,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    word-break: keep-all;
 }
 
 .main-section-2 > img {
     width: 300px;
+    margin-left: 100px;
+}
+ 
+.meine-erste-klasse-1 {
+    width: 600px;
+    padding-left: 40%;
+
 }
 
-.main-section-2 > p {
+.meine-erste-klasse-2 {
     width: 600px;
+    padding-left: 40%;
+    margin-bottom: 200px;
+
+}
+    
+
+
+.main-section-2 > p {
+    width: 300px;
     margin-left: 30px;
     font-size: 22px;
+    height: 400px;
+   
 }
+ 
+
 
 
 
 .table {
     display: flex;
     width: 300px;
-    height: 290px;
+    height: max-content;
     background-color: var(--color-blue-2);
     overflow: hidden;
     border-radius: 15px;
@@ -54,7 +75,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 40px;
     background-color: var(--color-blue-8);
 }
 
